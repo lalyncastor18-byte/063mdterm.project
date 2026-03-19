@@ -1,20 +1,11 @@
-/* css Zen Garden submission 063 - 'Elastic Lawn' by Patrick Griffiths, http://htmldog.com/ptg/ */
-/* css released under Creative Commons ShareAlike License v1.0 - http://creativecommons.org/licenses/sa/1.0/  */
-/* All associated graphics copyright 2003, Patrick Griffiths */
-/* Added: December 5th, 2003 */
-
-/* IMPORTANT */
-/* This design is not a template. You may not reproduce it elsewhere without the designer's written permission. */
-/* The CSS itself may freely be used for anything you wish, but the associated graphics belong to the designer. */
-/* What you may use - .css files. What you may not use - .jpg, .gif, and .png files. */
-
 
 body {
 	font-family: arial, Helvetica, sans-serif;
 	font-size: 77%; /* initially set to percentage so that ems work without producing miniscule text in IE */
 	text-align: center; /* needed to center the container in IE5.x because it doesn't like 'margin: 0 auto' */
 	color: #dfd;
-	background: #1b890e url(grass.jpg); /* defines the colour as well as the background image so that an average colour is shown while the image loads */
+	background: #1b890e url(butterflybg1.gif); /* defines the colour as well as the background image so that an average colour is shown while the image loads */
+	background-size: cover;
 	padding: 0 0 6em 0;
 	margin: 0;
 }
@@ -72,7 +63,9 @@ h1 {
 	left: -24px;
 	height: 8em;
 	font-size: 1em;
-	background: url(logo.gif) bottom left no-repeat;
+	background: url(header2.png) bottom left no-repeat;
+	background-size: cover;
+	background-position: left,center;
 	padding: 0;
 	margin: 0;
 }
@@ -81,7 +74,8 @@ h1 {
 	position: relative;
 	z-index: 1;
 	height: 8.1em; /* ensures that the linkList top fits directly below */
-	background: #fc3 url(yellowdiagonal.gif);
+	background: rgb(248, 6, 188) url(headerbg.jpg);
+	background-size: cover;
 	color: #030;
 	margin: 0;
 }
@@ -130,7 +124,7 @@ html>.summary p:last-child { width: 11em; }
 
 .preamble, .supporting {
 	width: 32em;
-	background: #0d4407 url(grassdark.jpg);
+	background: #0d4407 url(butterflybg2.gif);
 	margin-left: 16em;
 	voice-family: "\"}\"";
 	voice-family:inherit;
@@ -154,8 +148,8 @@ html>.preamble, html>.supporting { margin: 0 0 0 auto; }
 .preamble , .supporting div { padding: 0 0 2.5em 0; }
 
 .explanation, .benefits {
-	color: #030;
-	background: #fc3 url(yellowdiagonal.gif);
+	color: rgb(255, 255, 255);
+	background: none;
 	margin: 0 2em;
 }
 
@@ -250,7 +244,7 @@ footer {
 }
 
 .sidebar .wrapper {
-	background: #5b460b url(grassbrown.jpg);
+	background: #5b460b url(butterflybg3.gif);
 	padding: 0;
 }
 
